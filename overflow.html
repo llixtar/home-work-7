@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Експерименти з overflow</h2>
+
+    <h3>overflow: visible (за замовчуванням)</h3>
+    <div class="container-overflow visible">
+        <p class="content">Цей текст виходить за межі контейнера, оскільки overflow: visible.</p>
+    </div>
+
+
+    <h3>overflow: hidden</h3>
+    <div class="container-overflow hidden">
+        <p class="content">Цей текст обрізаний, тому що overflow: hidden.</p>
+    </div>
+
+    <h3>overflow: scroll</h3>
+    <div class="container-overflow scroll">
+        <p class="content">Цей контейнер має смуги прокрутки завжди, навіть якщо вміст менший за його розміри.</p>
+    </div>
+
+    <h3>overflow: auto</h3>
+    <div class="container-overflow auto">
+        <p class="content">Якщо вміст більший за контейнер, з'явиться прокрутка. Якщо менший — її не буде.</p>
+    </div>
+
+</body>
+</html>
